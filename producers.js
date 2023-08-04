@@ -10,7 +10,7 @@ const addWorker = (worker) => currentWorkers.push(worker)
 function runProducers() {
     for (let i = 1; i <= producersCount; i += 1) {
         runWorkerProcess(
-            './producer-worker.js',
+            './producerWorker.js',
             {streamName: STREAM_NAME},
             WorkerTypes.producer,
             addWorker);

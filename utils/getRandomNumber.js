@@ -1,3 +1,3 @@
-export const getRandomNumber = (rangeMax)=>{
+export const getRandomNumber = (rangeMax) => {
     return Math.floor(Math.random() * rangeMax)
 }

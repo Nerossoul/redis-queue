@@ -12,7 +12,7 @@ const end = Date.now()
 const result = {
     timeSpent: end - start,
     numbersGenerated: Array.from(resultArray).map((_, index) => index),
-    timeForEachNumber: Array.from(resultArray).map(bigInt=>bigInt.toString())
+    timeForEachNumber: Array.from(resultArray).map(bigInt => bigInt.toString())
 }
 
 stopProducers()

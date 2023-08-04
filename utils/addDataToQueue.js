@@ -3,7 +3,7 @@ import {rangeMax} from "../config.js";
 
 export const addDataToQueue = async (redisClient, streamName) => {
     const number = getRandomNumber(rangeMax)
-   await redisClient.xAdd(
+    await redisClient.xAdd(
         streamName,
         '*',
         {

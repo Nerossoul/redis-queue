@@ -32,7 +32,7 @@ async function runConsumer() {
     const workersPromises =
         Array.from(Array(systemCpuCores.length).keys()).map(
             (_, index) => runWorkerProcess(
-                './consumer-worker.js',
+                './consumerWorker.js',
                 {
                     streamName: STREAM_NAME,
                     groupName: CONSUMER_GROUP,
